@@ -12,7 +12,7 @@ export const FetchApi = (url) => {
       .then((data) => setData(data))
       .catch((error) => setError(error))
       .finally(setLoading(false));
-  }, []);
+  }, [url]);
 
   return {data, loading, error}
 };
